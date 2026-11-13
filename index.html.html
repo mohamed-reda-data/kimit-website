@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KIMIT | Digital Marketing &amp; Web Development</title>
+<meta name="description" content="KIMIT is a digital agency crafting high-performance websites and marketing, inspired by the Eye of Horus.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--panel:#0e0c08;--gold:#d4af37;--gold-l:#f3d77a;--gold-d:#8a6d1c;--text:#ece5d2;--muted:#a79f88;--line:rgba(212,175,55,.24);
+--ankh:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cg stroke='%23000' stroke-width='5'%3E%3Cellipse cx='16' cy='8' rx='5' ry='6'/%3E%3Cpath d='M16 14V30M8 19H24'/%3E%3C/g%3E%3Cg stroke='%23f3d77a' stroke-width='2.6'%3E%3Cellipse cx='16' cy='8' rx='5' ry='6'/%3E%3Cpath d='M16 14V30M8 19H24'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:border-box;cursor:var(--ankh) 16 16,auto}
+body{margin:0;background:var(--bg);color:var(--text);font:300 1.05rem/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.04em;margin:0}
+a{color:inherit;text-decoration:none}
+.gold{background:linear-gradient(120deg,var(--gold-l),var(--gold) 45%,#a67c1a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-block;padding:.95rem 2rem;border-radius:2px;font:500 .85rem Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(120deg,var(--gold-l),var(--gold) 55%,#a67c1a);color:#0a0805;border:1px solid var(--gold);transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 rgba(212,175,55,0)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(212,175,55,.35)}
+.btn.ghost{background:transparent;color:var(--gold-l)}
+.btn.sm{padding:.6rem 1.2rem;font-size:.72rem}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:calc(env(safe-area-inset-top,0px) + 12px) 5vw 12px;background:rgba(5,5,5,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.7rem;font-size:1.3rem;letter-spacing:.3em}
+.logo-eye{width:42px;height:26px;filter:drop-shadow(0 0 8px rgba(212,175,55,.5))}
+.links{display:flex;gap:2.2rem;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.links a:hover{color:var(--gold-l)}
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 6vw 80px;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#1c1608 0,#050505 62%)}
+.rays{position:absolute;left:50%;top:38%;width:150vmax;height:150vmax;margin:-75vmax 0 0 -75vmax;background:repeating-conic-gradient(from 0deg,rgba(212,175,55,.09) 0 4deg,transparent 4deg 14deg);-webkit-mask:radial-gradient(circle,#000 0,transparent 36%);mask:radial-gradient(circle,#000 0,transparent 36%);animation:spin 160s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-in{position:relative;z-index:2;max-width:880px}
+.hero-eye{width:min(420px,76vw);height:auto;filter:drop-shadow(0 0 34px rgba(212,175,55,.5));animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.kicker{font-size:.78rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin:1.6rem 0 1rem}
+h1{font-size:clamp(2.2rem,6.2vw,4.7rem);line-height:1.1;font-weight:900}
+.lead{max-width:640px;margin:1.4rem auto 2.2rem;color:var(--muted)}
+.cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.fal{position:absolute;bottom:7%;width:min(17vw,190px);opacity:.55;filter:drop-shadow(0 0 20px rgba(212,175,55,.4))}
+.fal.l{left:4vw}.fal.r{right:4vw;transform:scaleX(-1)}
+.band{height:14px;background:repeating-linear-gradient(135deg,var(--gold-d) 0 7px,transparent 7px 14px);border-block:1px solid var(--line);opacity:.8}
+.marq{overflow:hidden;border-bottom:1px solid var(--line);padding:1rem 0;background:#0a0805}
+.marq div{display:flex;width:max-content;animation:mq 38s linear infinite;font:700 .85rem Cinzel,serif;letter-spacing:.35em;text-transform:uppercase;color:var(--gold)}
+.marq span{padding:0 2rem;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:clamp(4rem,10vw,8rem) 6vw;max-width:1240px;margin:auto}
+.head{text-align:center;margin-bottom:3.4rem}
+h2{font-size:clamp(1.7rem,4vw,2.8rem)}
+.head p{color:var(--muted);max-width:620px;margin:1rem auto 0}
+.head::after{content:"";display:block;width:90px;height:2px;margin:1.6rem auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
+.card{position:relative;padding:2.2rem 1.8rem;border:1px solid var(--line);background:linear-gradient(160deg,#130f08,#070605);transition:transform .35s,border-color .35s,box-shadow .35s}
+.card::before,.card::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--gold)}
+.card::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.card::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 18px 50px rgba(212,175,55,.14)}
+.ico{width:46px;height:46px;stroke:var(--gold-l);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:1.2rem}
+h3{font-size:1.15rem;margin-bottom:.6rem;color:var(--gold-l)}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem}
+.panel{text-align:center;padding:2.6rem 2rem;border:1px solid var(--line);background:radial-gradient(circle at 50% 0,#1a1408,#070605 70%)}
+.panel svg{width:min(190px,60%);height:150px;margin-bottom:1.2rem;filter:drop-shadow(0 0 22px rgba(212,175,55,.4))}
+.panel p{color:var(--muted);margin:.6rem 0 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2rem;text-align:center}
+.step svg{width:38px;height:38px;stroke:var(--gold);fill:none;stroke-width:2.4;stroke-linecap:round;margin-bottom:1rem}
+.step p{color:var(--muted);font-size:.95rem;margin:.3rem 0 0}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:3rem;align-items:center;border:1px solid var(--line);background:linear-gradient(160deg,#130f08,#060505);padding:clamp(2rem,6vw,4rem)}
+form{display:grid;gap:1rem}
+label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+input,textarea{width:100%;margin-top:.4rem;padding:.9rem 1rem;background:#0a0805;border:1px solid var(--line);color:var(--text);font:inherit;border-radius:2px;outline:0;transition:border-color .3s,box-shadow .3s}
+input:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,.15)}
+textarea{min-height:120px;resize:vertical}
+.note{min-height:1.4em;font-size:.9rem;color:var(--gold-l);margin:0}
+footer{text-align:center;padding:3rem 6vw 4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .brand{justify-content:center;margin-bottom:.8rem;color:var(--gold-l)}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:820px){.links,.fal{display:none}.nav .btn.sm{padding:.55rem 1rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="250"><stop offset="0" stop-color="#f3d77a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#9a7418"/></linearGradient>
+<clipPath id="almond"><path d="M20 80C72 30 160 28 214 66C160 104 80 108 20 80Z"/></clipPath>
+<symbol id="eye" viewBox="0 0 240 150"><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="9" d="M28 44C90 4 170 6 228 40"/>
+<path stroke-width="6" d="M20 80C72 30 160 28 214 66C160 104 80 108 20 80Z"/>
+<path stroke-width="6" d="M214 66L234 78"/>
+<path stroke-width="6" d="M100 100V126C100 133 92 138 80 136"/>
+<path stroke-width="6" d="M176 92C192 116 178 140 156 136C140 132 142 116 156 117C166 118 166 128 158 128"/></g></symbol>
+<symbol id="falcon" viewBox="0 0 200 250">
+<path d="M52 210C40 160 46 104 86 74C112 54 146 56 164 74C172 82 178 90 186 96C192 100 190 108 184 114C180 102 170 100 160 102C154 114 144 124 132 128C138 156 148 182 164 210Z" fill="url(#g)" stroke="#5c4510" stroke-width="2"/>
+<g fill="none" stroke-linecap="round"><path d="M132 92C126 114 114 130 100 144" stroke="#1a1306" stroke-width="5"/><path d="M140 94C150 108 146 120 138 128" stroke="#1a1306" stroke-width="5"/>
+<path d="M72 124C76 152 86 180 98 208M94 112C98 144 108 176 120 208" stroke="#7a5a12" stroke-width="3"/>
+<path d="M92 70C110 54 142 54 160 72" stroke="#fff3c0" stroke-width="2" opacity=".6"/>
+<path d="M44 216Q104 254 170 216" stroke="url(#g)" stroke-width="5"/><path d="M58 228Q108 252 158 228" stroke="url(#g)" stroke-width="3"/></g>
+<circle cx="140" cy="84" r="9" fill="#050505" stroke="#f3d77a" stroke-width="2"/><circle cx="140" cy="84" r="3.5" fill="#f3d77a"/></symbol>
+<symbol id="ankh" viewBox="0 0 32 32"><g fill="none" stroke="currentColor"><ellipse cx="16" cy="8" rx="5" ry="6"/><path d="M16 14V30M8 19H24"/></g></symbol>
+</defs></svg>
+
+<nav class="nav" id="nav">
+<a class="brand" href="#top" aria-label="KIMIT home"><svg class="logo-eye" viewBox="0 0 240 150"><use href="#eye"/><circle cx="117" cy="69" r="20" fill="url(#g)"/></svg><span class="gold">KIMIT</span></a>
+<div class="links"><a href="#services">Services</a><a href="#vision">Vision</a><a href="#process">Process</a></div>
+<a class="btn sm" href="#contact">Start a Project</a>
+</nav>
+
+<header class="hero" id="top">
+<canvas id="dust"></canvas><div class="rays"></div>
+<svg class="fal l" viewBox="0 0 200 250" aria-hidden="true"><use href="#falcon"/></svg>
+<svg class="fal r" viewBox="0 0 200 250" aria-hidden="true"><use href="#falcon"/></svg>
+<div class="hero-in">
+<svg class="hero-eye" id="heroEye" viewBox="0 0 240 150" role="img" aria-label="Eye of Horus"><use href="#eye"/>
+<g clip-path="url(#almond)"><g id="pupil"><circle cx="117" cy="69" r="21" fill="#0a0805" stroke="url(#g)" stroke-width="4"/><circle cx="117" cy="69" r="12" fill="url(#g)"/><circle cx="117" cy="69" r="5" fill="#050505"/><circle cx="111" cy="63" r="2.8" fill="#fff" opacity=".7"/></g></g></svg>
+<p class="kicker">Digital Marketing &middot; Web Development</p>
+<h1><span class="gold">Digital Monuments</span><br>Built To Endure</h1>
+<p class="lead">KIMIT is a digital agency that crafts high-performance websites and marketing with the vision of the Eye and the speed of the Falcon.</p>
+<div class="cta"><a class="btn" href="#contact">Start a Project</a><a class="btn ghost" href="#services">Explore Services</a></div>
+</div>
+</header>
+<div class="band"></div>
+<div class="marq" aria-hidden="true"><div>
+<span>Websites &#9670; Branding &#9670; SEO &#9670; Social Media &#9670; Campaigns &#9670; Analytics &#9670;</span><span>Websites &#9670; Branding &#9670; SEO &#9670; Social Media &#9670; Campaigns &#9670; Analytics &#9670;</span>
+</div></div>
+
+<section id="services">
+<div class="head rv"><p class="kicker" style="margin-top:0">What We Do</p><h2 class="gold">Services Forged In Gold</h2><p>Everything your brand needs to be seen, trusted and remembered online.</p></div>
+<div class="grid">
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 10l-3 2 3 2M15 10l3 2-3 2"/></svg><h3>Web Development</h3><p>Fast, responsive, custom-built websites and web apps, engineered for performance and conversion.</p></article>
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg><h3>Digital Marketing</h3><p>Strategy-led campaigns that put your brand in front of the right audience at the right moment.</p></article>
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg><h3>SEO</h3><p>Technical and content optimization that earns lasting visibility on search engines.</p></article>
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Social Media</h3><p>Content, community and paid social that builds an engaged and loyal following.</p></article>
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 6-8 12L4 9z"/><path d="M4 9h16"/></svg><h3>Brand Identity</h3><p>Logos, visual systems and tone of voice with the weight and presence of a monument.</p></article>
+<article class="card rv"><svg class="ico" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>Analytics</h3><p>Clear tracking and honest reporting so every decision is guided by real data.</p></article>
+</div>
+</section>
+
+<div class="band"></div>
+<section id="vision">
+<div class="head rv"><p class="kicker" style="margin-top:0">Our Vision</p><h2 class="gold">The Eye Sees. The Falcon Strikes.</h2><p>Horus, the sky god, watched over the land from above. We bring the same discipline to your digital presence.</p></div>
+<div class="duo">
+<div class="panel rv"><svg viewBox="0 0 240 150"><use href="#eye"/><circle cx="117" cy="69" r="20" fill="url(#g)"/><circle cx="117" cy="69" r="7" fill="#050505"/></svg><h3>The Eye &mdash; Insight</h3><p>Research, analytics and strategy. We study your market, your audience and your goals before a single line is written.</p></div>
+<div class="panel rv"><svg viewBox="0 0 200 250" style="height:190px;margin-top:-20px"><use href="#falcon"/></svg><h3>The Falcon &mdash; Speed</h3><p>Precise execution and fast, polished delivery. Sites that load instantly and campaigns that launch with purpose.</p></div>
+</div>
+</section>
+
+<div class="band"></div>
+<section id="process">
+<div class="head rv"><p class="kicker" style="margin-top:0">How We Work</p><h2 class="gold">The Path Of Ascent</h2></div>
+<div class="steps">
+<div class="step rv"><svg viewBox="0 0 32 32"><use href="#ankh"/></svg><h3>Observe</h3><p>We listen, research and map your brand, competitors and audience.</p></div>
+<div class="step rv"><svg viewBox="0 0 32 32"><use href="#ankh"/></svg><h3>Design</h3><p>We shape a bold identity and experience that fits your story.</p></div>
+<div class="step rv"><svg viewBox="0 0 32 32"><use href="#ankh"/></svg><h3>Build</h3><p>We develop, test and refine until every detail is flawless.</p></div>
+<div class="step rv"><svg viewBox="0 0 32 32"><use href="#ankh"/></svg><h3>Ascend</h3><p>We launch, measure and keep growing your presence over time.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact rv">
+<div><p class="kicker" style="margin-top:0">Begin Your Legacy</p><h2 class="gold">Let&rsquo;s Build Something Eternal</h2><p style="color:var(--muted)">Tell us about your project and we will get back to you.</p></div>
+<form id="form" novalidate>
+<label>Name<input id="n" required autocomplete="name"></label>
+<label>Email<input id="e" type="email" required autocomplete="email"></label>
+<label>Project<textarea id="m" required></textarea></label>
+<button class="btn" type="submit">Send Message</button>
+<p class="note" id="note" role="status"></p>
+</form>
+</div>
+</section>
+
+<footer><div class="brand"><span class="gold">KIMIT</span></div>Digital Marketing &amp; Web Development &middot; &copy; KIMIT. All rights reserved.</footer>
+
+<script>
+(function(){
+var CONTACT_EMAIL="kmit1393@gmail.com";
+var nav=document.getElementById("nav");
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+// reveal on scroll
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+"ms";io.observe(el)})}else{els.forEach(function(el){el.classList.add("in")})}
+// pupil follows pointer
+var eye=document.getElementById("heroEye"),pup=document.getElementById("pupil");
+addEventListener("pointermove",function(ev){if(rm)return;var r=eye.getBoundingClientRect();var dx=(ev.clientX-(r.left+r.width/2))/innerWidth,dy=(ev.clientY-(r.top+r.height/2))/innerHeight;
+pup.setAttribute("transform","translate("+Math.max(-1,Math.min(1,dx*2.4))*24+" "+Math.max(-1,Math.min(1,dy*2.4))*8+")")});
+// golden dust
+var cv=document.getElementById("dust"),cx=cv.getContext("2d"),P=[],W,H,D=Math.min(devicePixelRatio||1,2);
+function size(){var b=cv.parentNode.getBoundingClientRect();W=b.width;H=b.height;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+function mk(init){return{x:Math.random()*W,y:init?Math.random()*H:H+10,r:Math.random()*1.7+.4,v:Math.random()*.35+.12,a:Math.random()*.6+.2,s:Math.random()*Math.PI*2}}
+size();addEventListener("resize",size);for(var i=0;i<55;i++)P.push(mk(true));
+function tick(){cx.clearRect(0,0,W,H);P.forEach(function(p,i){p.y-=p.v;p.s+=.01;p.x+=Math.sin(p.s)*.25;if(p.y<-10)P[i]=mk(false);cx.beginPath();cx.fillStyle="rgba(243,215,122,"+p.a+")";cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()});if(!rm)requestAnimationFrame(tick)}
+tick();
+// contact form -> opens the visitor's email app
+var f=document.getElementById("form"),note=document.getElementById("note");
+f.addEventListener("submit",function(ev){ev.preventDefault();var n=document.getElementById("n").value.trim(),e=document.getElementById("e").value.trim(),m=document.getElementById("m").value.trim();
+if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){note.textContent="Please complete all fields with a valid email.";return}
+location.href="mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("Project inquiry from "+n)+"&body="+encodeURIComponent(m+"\n\n"+n+" ("+e+")");
+note.textContent="Your email app is opening to send the message."});
+})();
+</script>
+</body>
+</html>
